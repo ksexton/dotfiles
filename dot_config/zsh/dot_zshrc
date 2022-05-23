@@ -1,0 +1,44 @@
+# automatically remove duplicates from these arrays
+typeset -U path cdpath fpath manpath
+
+# Enable completions, the -u flag tells compinit not to complain about insecure directories
+autoload -U compinit && compinit -u
+
+# Fish like command suggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Environment variables
+export PATH="$PATH:$HOME/.emacs.d/bin:$HOME/bin:$HOME/.local/bin"
+export EDITOR='emacsclient -c'
+
+# Number of commands that are loaded into memory from the history file
+export HISTSIZE="10000"
+
+# Number of commands that are stored in the zsh history file
+export SAVEHIST="10000"
+
+setopt HIST_FCNTL_LOCK
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt SHARE_HISTORY
+
+if [ -z "$INSIDE_EMACS" ]; then
+  eval "$(/usr/local/bin/starship init zsh)"
+fi
+
+# Aliases
+if command -v exa > /dev/null; then
+    alias l='exa --icons'
+    alias la='exa -a --icons'
+    alias ll='exa -lah --icons'
+    alias ls='exa --color=auto --icons'
+fi
+
+if command -v bat > /dev/null; then
+    alias cat='bat --style=plain'
+fi
+
+if command -v kitty > /dev/null; then
+    alias ssh='kitty +kitten ssh'
+fi
+

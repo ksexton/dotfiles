@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e # -e: exit on error
+
+if [ ! "$(command -v brew)" ]; then
+    echo "🍺 Install Homebrew"
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+echo "🍺 Install setup essentials (Brewfile will be installed later)" 
+
+brew bundle -q --file=/dev/stdin <<EOF
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+EOF
+

@@ -1,3 +1,4 @@
+{{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/sh
 
 set -e # -e: exit on error
@@ -15,4 +16,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
 EOF
+
+{{ end }}
 

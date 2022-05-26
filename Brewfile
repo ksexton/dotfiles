@@ -7,6 +7,9 @@ cask "git-credential-manager-core"
 cask "arq"
 cask "karabiner-elements"
 cask "mpv"
+cask "kitty"
+cask "logseq"
+
 
 # Emacs
 tap "d12frosted/emacs-plus"

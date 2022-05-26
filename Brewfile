@@ -6,6 +6,7 @@ brew "zsh-autosuggestions"
 cask "git-credential-manager-core"
 cask "arq"
 cask "karabiner-elements"
+cask "mpv"
 
 # Emacs
 tap "d12frosted/emacs-plus"

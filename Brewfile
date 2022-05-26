@@ -1,4 +1,6 @@
 tap "microsoft/git"
+tap "homebrew/cask-fonts"
+
 brew "svn" # needed for font-cantarell
 brew "starship"
 brew "zsh-autosuggestions"
@@ -19,4 +21,4 @@ tap  "homebrew/cask-fonts"
 
 cask "font-cantarell"
 cask "font-fira-code"
-
+cask "font-meslo-lg-nerd-font"

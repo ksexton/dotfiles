@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 brew "svn" # needed for font-cantarell
 brew "starship"
 brew "zsh-autosuggestions"
+brew "youtube-dl"
 
 cask "git-credential-manager-core"
 cask "arq"

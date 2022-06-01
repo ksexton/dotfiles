@@ -12,7 +12,8 @@ cask "karabiner-elements"
 cask "mpv"
 cask "kitty"
 cask "logseq"
-
+cask "1password"
+cask "1password-cli"
 
 # Emacs
 tap "d12frosted/emacs-plus"

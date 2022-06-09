@@ -5,6 +5,7 @@ brew "svn" # needed for font-cantarell
 brew "starship"
 brew "zsh-autosuggestions"
 brew "youtube-dl"
+brew "ansible"
 
 cask "git-credential-manager-core"
 cask "arq"

@@ -20,6 +20,9 @@ cask "1password-cli"
 tap "d12frosted/emacs-plus"
 brew "d12frosted/emacs-plus/emacs-plus@29", args: ["with-elrumo2-icon", "with-native-comp", "with-no-frame-refocus"], link: true
 
+# Let's get some spell checking going
+brew "enchant"
+
 tap  "homebrew/cask-fonts"
 
 cask "font-cantarell"

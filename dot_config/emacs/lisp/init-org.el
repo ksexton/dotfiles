@@ -14,7 +14,7 @@
          ("C-c n C r" . org-roam-dailies-capture-tomorrow)
          ("C-c n t"   . org-roam-dailies-goto-today)
          ("C-c n y"   . org-roam-dailies-goto-yesterday)
-         ("C-c n r"   . org-roam-dailies-goto-tomorrow)  
+         ("C-c n r"   . org-roam-dailies-goto-tomorrow))
   :init
   (setq org-roam-v2-ack t)
   :config

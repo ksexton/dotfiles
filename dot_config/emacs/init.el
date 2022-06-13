@@ -85,6 +85,7 @@
 
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(server-start)
 (require 'init-appearance)
 (require 'init-org)
 

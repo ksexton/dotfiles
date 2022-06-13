@@ -6,6 +6,7 @@ brew "starship"
 brew "zsh-autosuggestions"
 brew "youtube-dl"
 brew "ansible"
+brew "graphviz"
 
 cask "git-credential-manager-core"
 cask "arq"

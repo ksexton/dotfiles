@@ -7,6 +7,8 @@ brew "zsh-autosuggestions"
 brew "youtube-dl"
 brew "ansible"
 brew "graphviz"
+brew "tiny-fugue"
+
 
 cask "git-credential-manager-core"
 cask "arq"

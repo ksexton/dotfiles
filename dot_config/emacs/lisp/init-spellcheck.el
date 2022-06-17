@@ -25,3 +25,4 @@
   (setq ispell-program-name "enchant-2"))
 
 
+(provide 'init-spellcheck)

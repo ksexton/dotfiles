@@ -89,10 +89,10 @@
 
 ;; Load things
 (require 'init-appearance)
+(require 'init-org)
 (require 'init-chezmoi)
 (require 'init-ebooks)
 (require 'init-magit)
-(require 'init-org)
 (require 'init-spellcheck)
 
 

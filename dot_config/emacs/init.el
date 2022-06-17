@@ -86,9 +86,14 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (server-start)
-(require 'init-appearance)
-(require 'init-org)
 
+;; Load things
+(require 'init-appearance)
+(require 'init-chezmoi)
+(require 'init-ebooks)
+(require 'init-magit)
+(require 'init-org)
+(require 'init-spellcheck)
 
 
 
